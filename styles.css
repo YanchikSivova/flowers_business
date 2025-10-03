@@ -104,12 +104,25 @@ body{
     margin-top: -100px;
 }
 
+.advantages__table th,
+.advantages__table td{
+    vertical-align: middle;
+}
+
 .advantages__table tbody tr:last-child{
     border-bottom: none;
 }
 
 .advantages__table thead tr{
     border-top: none;
+}
+.advantages__table thead th{
+    padding-left: 20px;
+    margin-left: -20px;
+}
+.advantages__table td{
+    padding-left: 20px;
+    margin-left: -20px;
 }
 
 .advantages__table th:first-child,
@@ -120,4 +133,24 @@ body{
 .advantages__table th:last-child,
 .advantages__table td:last-child{
     border-right: none;
+}
+.pros__row,
+.job-advantages__row{
+    margin-bottom: 5px;
+}
+.pros__item,
+.job-advantages__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pros__item i,
+.job-advantages__item i{
+    font-size: 40px;
+}
+
+.pros__item p,
+.job-advantages__item p{
+    margin: 0;
 }

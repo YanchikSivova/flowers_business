@@ -2,10 +2,12 @@
 <html lang="ru">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VeGaFlowers</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -37,42 +39,46 @@
         <div class="advantages">
             <h1 class="advantages__header">Чем стабилизированные цветы лучше обычных?</h1>
             <p class="advantages__text">Оцените преимущества стабилизированных цветов</p>
-            <table class="advantages__table">
-                <tr class="table__row">
-                    <td class="table__item"></td>
-                    <td class="table__item">Стабилизированные цветы</td>
-                    <td class="table__item">Обычные цветы</td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__item">Практичность</td>
-                    <td class="table__item">Не требуют ухода</td>
-                    <td class="table__item">Требуют постоянного ухода</td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__item">Оригинальность</td>
-                    <td class="table__item">Неординарный подарок</td>
-                    <td class="table__item">Банальный подарок на каждый праздник</td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__item">Внешний вид</td>
-                    <td class="table__item">Сохраняют нежностью и красоту живого цветка</td>
-                    <td class="table__item">Засыхают в течение нескольких недель</td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__item">Стоимость</td>
-                    <td class="table__item">Сравнима с обычным букетом</td>
-                    <td class="table__item">Цена от 1 000 руб</td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__item">Долговечность</td>
-                    <td class="table__item">Могут стоят десятилетиями</td>
-                    <td class="table__item">Увядают через две недели</td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__item">Безопасность</td>
-                    <td class="table__item">Гипоаллергенны</td>
-                    <td class="table__item">Могут вызвать аллергию</td>
-                </tr>
+            <table class="table table-bordered advantages__table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Стабилизированные цветы</th>
+                        <th scope="col">Обычные цветы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Практичность</td>
+                        <td >Не требуют ухода</td>
+                        <td >Требуют постоянного ухода</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Оригинальность</td>
+                        <td>Неординарный подарок</td>
+                        <td>Банальный подарок на каждый праздник</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Внешний вид</td>
+                        <td>Сохраняют нежностью и красоту живого цветка</td>
+                        <td>Засыхают в течение нескольких недель</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Стоимость</td>
+                        <td>Сравнима с обычным букетом</td>
+                        <td>Цена от 1 000 руб</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Долговечность</td>
+                        <td>Могут стоят десятилетиями</td>
+                        <td>Увядают через две недели</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Безопасность</td>
+                        <td>Гипоаллергенны</td>
+                        <td>Могут вызвать аллергию</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="options">
@@ -215,23 +221,49 @@
             <h1 class="manager__header">Для открытия франшизы за вами</br>закрепляется индивидуальный менеджер</h1>
             <p class="manager__text">Познакомьтесь со своими будущими партнерами, которые за руку доведут вас
                 до</br>магазина с оборотом 2 000 000 руб в месяц</p>
-            <div class="scroll__section">
-                <button class="scroll_button-left">‹</button>
-                <div class="scroll__container">
-                    <div class="scroll__item">
-                        <img class="scroll__item-img" src="/" alt="image">
-                        <p class="scroll__item-text">Должность</br>Опыт</p>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="width: 18rem;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img top" src="assets/avatar_img.png" alt="First slide">
+                            <div class="card-body">
+                                <h5 class="card-title">Должность</h5>
+                                <p class="card-text">Опыт</p>
+                                <a href="/" class="btn">Задайте вопрос Ивану</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scroll__item">
-                        <img class="scroll__item-img" src="/" alt="image">
-                        <p class="scroll__item-text">Должность</br>Опыт</p>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img top" src="assets/avatar_img.png" alt="First slide">
+                            <div class="card-body">
+                                <h5 class="card-title">Должность</h5>
+                                <p class="card-text">Опыт</p>
+                                <a href="/" class="btn">Задайте вопрос Петру</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scroll__item">
-                        <img class="scroll__item-img" src="/" alt="image">
-                        <p class="scroll__item-text">Должность</br>Опыт</p>
+                    <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img top" src="assets/avatar_img.png" alt="First slide">
+                            <div class="card-body">
+                                <h5 class="card-title">Должность</h5>
+                                <p class="card-text">Опыт</p>
+                                <a href="/" class="btn">Задайте вопрос Елене</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="scroll_button-right">›</button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <div class="contract">
@@ -244,7 +276,7 @@
                     <li class="contract__list-item">консультации</li>
                 </ul>
             </div>
-            <a class="contract_file" href="/">Файл</a>  
+            <a class="contract_file" href="/">Файл</a>
             <!-- Разобраться с файлом -->
         </div>
         <div class="job-advantages">
@@ -255,11 +287,12 @@
                         <img class="job-advantages__img" src="/" alt="image">
                         <p class="job-advantages__text">Доступ к онлайн школе франчайзера, с более</br>чем 20 урокам</p>
                     </div>
-                     <div class="job-advantages__item">
+                    <div class="job-advantages__item">
                         <img class="job-advantages__img" src="/" alt="image">
-                        <p class="job-advantages__text">Маркетинг при запуске, реклама на сайте</br>и в социальных сетях</p>
+                        <p class="job-advantages__text">Маркетинг при запуске, реклама на сайте</br>и в социальных сетях
+                        </p>
                     </div>
-                     <div class="job-advantages__item">
+                    <div class="job-advantages__item">
                         <img class="job-advantages__img" src="/" alt="image">
                         <p class="job-advantages__text">Минимальная закупочная стоимость товара</p>
                     </div>
@@ -269,11 +302,11 @@
                         <img class="job-advantages__img" src="/" alt="image">
                         <p class="job-advantages__text">Аренда склада в вашем регионе под</br>товарный запас</p>
                     </div>
-                     <div class="job-advantages__item">
+                    <div class="job-advantages__item">
                         <img class="job-advantages__img" src="/" alt="image">
                         <p class="job-advantages__text">Эксклюзивные права на франшизу в вашем</br>городе\регионе</p>
                     </div>
-                     <div class="job-advantages__item">
+                    <div class="job-advantages__item">
                         <img class="job-advantages__img" src="/" alt="image">
                         <p class="job-advantages__text">Мотивационная бонусная система</p>
                     </div>
@@ -290,7 +323,8 @@
             </div>
         </div>
         <div class="certificate">
-            <h1 class="certificate__header">Занимаемся цветочным бизнесом более 15 лет и</br>гордимся своей репутацией</h1>
+            <h1 class="certificate__header">Занимаемся цветочным бизнесом более 15 лет и</br>гордимся своей репутацией
+            </h1>
             <div class="certificate_container">
                 <div class="certificate__item">
                     <p class="certificate__text">Сертификат</p>
@@ -307,7 +341,8 @@
             </div>
         </div>
         <div class="comments">
-            <h1 class="comments__header">Flowers в социальных сетях, почитайте</br>отзывы наших реальных клиентов</br></h1>
+            <h1 class="comments__header">Flowers в социальных сетях, почитайте</br>отзывы наших реальных клиентов</br>
+            </h1>
             <p class="comments__text">Более 1111 подписчиков в соц сетях в ВК и Инстаграм</p>
             <div class="comments__container">
                 <img class="comments__img" src="/" alt="image">
@@ -346,7 +381,7 @@
             <p class="question-apply__text">Задайте их прямо сейчас и получите консультацию в течение 15 мин</p>
             <input class="question-apply__input" name="question" type="text" placeholder="Введите вопрос" required>
             <input class="question-apply__phone-input" name="phone" type="tel" inputmode="tel" autocomplete="tel"
-                    placeholder="Введите ваш телефон" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                placeholder="Введите ваш телефон" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
             <button class="qestion-apply__button" type="button">Получить консультацию</button>
         </div>
         <img class="map__img" src="/" alt="image">
@@ -356,7 +391,7 @@
             <img class="footer__img" src="/" alt="image">
             <div class="footer__container">
                 <p class="footer__header">VeGaFlowers</p>
-                <p class="footer__header-text" >Оптовая и розничная торговля</br>стабилизированными цветами</p>
+                <p class="footer__header-text">Оптовая и розничная торговля</br>стабилизированными цветами</p>
             </div>
         </div>
         <p class="footer__text">Время работы с 10:00 до 18:00</p>
@@ -365,6 +400,7 @@
             <a class="footer__phone-link" href="#phone-apply">Заказать обратный звонок</a>
         </div>
     </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

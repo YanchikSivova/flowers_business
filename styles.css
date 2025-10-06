@@ -2,7 +2,7 @@
     /* --color-bg:#C8C7C5; --color-fg:#671B1F; */
     /*--color-bg:#2f3640; --color-fg:#f2f2f2;/*#44bd32;/*;/*#ff7a93;*/
     /*--color-bg:#F5F1E8; --color-fg:#4A5C5A;--color-muted:#9A8C98; --color-accent:#333333;/*C44536;*/
-    --color-bg:#FDFEFD; --color-fg:#5A7268; --color-accent:#F5C3C2; --color-muted:#A8D8B9;
+    --color-bg:#FDFEFD; --color-fg:#5A7268; --color-accent:#f8d9d8; --color-darkaccent:#F5C3C2;
     --space-1: 4px; --space-2: 8px; --space-3: 16px; --space-4: 24px; --space-5: 40px;
 
     --radius:12px;
@@ -26,7 +26,7 @@ html,body{padding: 0; margin: 0;}
 body{
     background-color: var(--color-bg);
     color: var(--color-fg);
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     line-height: 1.5;
 }
 
@@ -44,7 +44,9 @@ body{
     position: sticky;
     top:0;
     z-index: 100;
-    padding: var(--space-3) var(--space-2);
+    padding:var(--space-2);
+    
+    font-family: var(--font-accent);
 }
 .header__main,
 .footer__main{
@@ -58,8 +60,17 @@ body{
     flex-direction: column;
     gap: 0;
 }
+.header__main-desc{
+    margin: 0;
+    font-size: 15px;
+    line-height: 1;
+}
 .header__desc,
-.header__phone,
+.header__phone{
+    margin: 0;
+    font-size: 20px;
+}
+
 .footer__header,
 .footer__header-text,
 .footer__phone{
@@ -68,11 +79,15 @@ body{
 
 .header__text{
     color: var(--color-bg);
-    font-family: var(--font-accent);
     text-decoration: none;
+    font-size: 25px;
 }
 
-.header__phone-link,
+.header__phone-link{
+    color: var(--color-bg);
+    font-size: 15px;
+}
+
 .footer__phone-link{
     color: var(--color-bg);
 }
@@ -84,20 +99,72 @@ body{
     background-color: var(--color-fg);
     color: var(--color-bg);
     padding: var(--space-2) var(--space-2);
+    
+    font-family: var(--color-accent);
 }
 
 .main{
     padding: 0  75px;
 }
 
-.inf{
+.inf,
+.advantages,
+.options,
+.apply,
+.manager,
+.contract,
+.job-advantages,
+.phone-apply,
+.certificate,
+.comments,
+.questions,
+.question-apply{
     background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-heading);
+    padding: 15px 0;
 }
 
-.inf__header{
+.inf__header,
+.advantages__header,
+.options__header,
+.apply__header,
+.pros__header,
+.manager__header,
+.contract__header,
+.job-advantages__header
+.phone-apply__header,
+.certificate__header,
+.comments__header,
+.questions__header,
+.question-apply__header{
     margin: 0;
+    font-size: 40px;
 }
 
+.inf__list-item{
+    font-size: 20px;
+}
+
+.inf__button{
+    border-radius: var(--radius);
+    background-color: var(--color-accent);
+    border: none;
+    color: var(--color-fg);
+    padding: var(--space-1) var(--space-2);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.inf__button:hover{
+    background-color: var(--color-darkaccent);
+    transform: translateY(-1px);
+}
+
+.inf__button:focus-visible{
+    outline: 2px solid var(--color-fg);
+    outline-offset: 1px;
+}
 
 .phone-apply{
     padding-top:100px;

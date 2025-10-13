@@ -142,7 +142,8 @@ body{
     font-size: 40px;
 }
 
-.inf__list-item{
+.inf__list-item,
+.advantages__text{
     font-size: 20px;
 }
 
@@ -166,6 +167,23 @@ body{
     outline-offset: 1px;
 }
 
+.options__first-list,
+.options__first-desc,
+.options__second-list,
+.options__second-desc,
+.options__third-list,
+.options__third-desc{
+    font-size: 20px;
+}
+ .options__first,
+ .options__second{
+    padding: 10px 0;
+ }
+
+ .options__third{
+  padding-top: 10px;  
+ }
+
 .phone-apply{
     padding-top:100px;
     margin-top: -100px;
@@ -174,6 +192,7 @@ body{
 .advantages__table th,
 .advantages__table td{
     vertical-align: middle;
+    color: var(--color-fg);
 }
 
 .advantages__table tbody tr:last-child{

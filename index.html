@@ -16,7 +16,7 @@
         <div class="header__main">
             <img class="header__image" src="assets/flower_logo.png" style="width: 80px;">
             <div class="header__container">
-                <a class="header__text" href="index.html">VeGaFlowers</a>
+                <a class="text header__text" href="index.html">VeGaFlowers</a>
                 <p class="header__main-desc">Оптовая и розичная торговля</br>стабилизированными цветами</p>
             </div>
         </div>
@@ -28,7 +28,7 @@
     </header>
     <main class="main">
 
-        <div class="container inf">
+        <div class="inf">
             <h1 class="inf__header">Откройте магазин стабилизированных цветов по</br>франшизе с окупаемостью от 2-х
                 месяцев</br>с чистой прибылью от 30% до 50%</h1>
             <ul class="inf__list">
@@ -221,14 +221,20 @@
         <div class="apply">
             <h1 class="apply__header">Оставьте заявку и получите</br>индивидуальный рассчет стоимости
             </h1>
-            <div class="apply__form">
-                <input class="name__input" name="name" type="text" required minlength="2" autocomplete="given-name"
-                    placeholder="Введите ваше имя">
-                <input class="phone__input" name="phone" type="tel" inputmode="tel" autocomplete="tel"
-                    placeholder="Введите ваш телефон" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
-                <button class="apply__button" type="button">Получить индивидуальный рассчет
+            <form class="row apply__form">
+                <div class="col form-floating mt-3">
+                    <input type="text" id="name" class="form-control name__input" placeholder="enter your name"
+                        required>
+                    <label for="name" class="ps-4">Имя</label>
+                </div>
+                <div class="col form-floating mt-3">
+                    <input type="tel" id="phone" class="form-control phone__input" placeholder="enter your phone"
+                        required>
+                    <label for="phone" class="phone__input-label ps-4">Телефон</label>
+                </div>
+                <button type="submit" class="col btn apply__button mt-3">Получить индивидуальный рассчет
                     стоимости</button>
-            </div>
+            </form>
         </div>
 
         <div class=pros style="padding: 15px 0;"">
@@ -282,7 +288,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Должность</h5>
                                 <p class="card-text">Опыт</p>
-                                <a href="/" class="btn">Задайте вопрос Ивану</a>
+                                <a href="/" class="btn card__button">Задайте вопрос Ивану</a>
                             </div>
                         </div>
                     </div>
@@ -292,7 +298,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Должность</h5>
                                 <p class="card-text">Опыт</p>
-                                <a href="/" class="btn">Задайте вопрос Петру</a>
+                                <a href="/" class="btn card__button">Задайте вопрос Петру</a>
                             </div>
                         </div>
                     </div>
@@ -302,7 +308,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Должность</h5>
                                 <p class="card-text">Опыт</p>
-                                <a href="/" class="btn">Задайте вопрос Елене</a>
+                                <a href="/" class="btn card__button">Задайте вопрос Елене</a>
                             </div>
                         </div>
                     </div>
@@ -324,207 +330,223 @@
             <div class="contract__text">
                 <h1 class="contract__header">Посмотрите договор, в котором</br>прописаны Ваши гарантии
                 </h1>
-                <p class="contract__list-header">Мы предоставляем гарантию на:</p>
+                <p class="contract__list-header mt-2">Мы предоставляем гарантию на:</p>
                 <ul class="contract__list">
                     <li class="contract__list-item">продукцию</li>
                     <li class="contract__list-item">сервис</li>
                     <li class="contract__list-item">консультации</li>
                 </ul>
             </div>
-            <a class="contract_file" href="/">Файл</a>
             <!-- Разобраться с файлом -->
-        </div>
 
-        <div class="job-advantages">
-            <h1 class="job-advantages__header">6 преимуществ работы с Flowers:</h1>
+            <div class="job-advantages">
+                <h1 class="job-advantages__header">6 преимуществ работы с Flowers:</h1>
 
-            <div class="row job-advantages__row">
-                <div class="col job-advantages__item">
-                    <i class="bi bi-mortarboard-fill" style="color: #97c7fc;"></i>
-                    <!-- #061084 -->
-                    <p class="job-advantages__text">Доступ к онлайн школе франчайзера, с более</br>чем
-                        20 урокам</p>
-                </div>
-                <div class="col job-advantages__item">
-                    <i class="bi bi-box-seam-fill" style="color: #fac47a;"></i>
-                    <!-- #ffd194 -->
-                    <p class="job-advantages__text">Аренда склада в вашем регионе под</br>товарный запас
-                    </p>
-                </div>
-            </div>
-
-            <div class="row job-advantages__row">
-                <div class="col job-advantages__item">
-                    <i class="bi bi-megaphone-fill" style="color:#e5a4e1 ;"></i>
-                    <p class="job-advantages__text">Маркетинг при запуске, реклама на сайте</br>и в
-                        социальных сетях
-                    </p>
-                </div>
-                <div class="col job-advantages__item">
-                    <i class="bi bi-star-fill" style="color: #ffe885;"></i>
-                    <!-- #f7cd1a -->
-                    <p class="job-advantages__text">Эксклюзивные права на франшизу в
-                        вашем</br>городе\регионе</p>
-                </div>
-            </div>
-
-            <div class="row job-advantages__row">
-                <div class="col job-advantages__item">
-                    <i class="bi bi-cash" style="color: #90b291;"></i>
-                    <p class="job-advantages__text">Минимальная закупочная стоимость товара</p>
-                </div>
-                <div class="col job-advantages__item">
-                    <i class="bi bi-gift-fill" style="color: #fb8eb8;"></i>
-                    <!-- #f8448b -->
-                    <p class="job-advantages__text">Мотивационная бонусная система</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="phone-apply" class="phone-apply">
-            <h1 class="phone-apply__header">Оставьте заявку</h1>
-            <p class="phone-apply__text">и получите консультацию специалиста в течение 15 минут</p>
-            <div class="phone-apply__container">
-                <input class="phone-apply__input" name="phone" type="tel" inputmode="tel" autocomplete="tel"
-                    placeholder="Введите ваш телефон" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
-                <button class="phone-apply__button" type="button">Получить консультацию</button>
-            </div>
-        </div>
-
-        <div class="certificate">
-            <h1 class="certificate__header">Занимаемся цветочным бизнесом более 15 лет и</br>гордимся
-                своей
-                репутацией
-            </h1>
-            <div class="row certificate_container">
-                <div class="col certificate__item">
-                    <p class="certificate__text">Сертификат</p>
-                    <img class="certificate__img" src="assets/certificate.jpg" alt="certificate" style="width: 18rem;">
-                </div>
-                <div class="col certificate__item">
-                    <p class="certificate__text">Сертификат</p>
-                    <img class="certificate__img" src="assets/certificate.jpg" alt="certificate" style="width: 18rem;">
-                </div>
-                <div class="col certificate__item">
-                    <p class="certificate__text">Сертификат</p>
-                    <img class="certificate__img" src="assets/certificate.jpg" alt="certificate" style="width: 18rem;">
-                </div>
-            </div>
-        </div>
-
-        <div class="comments">
-            <h1 class="comments__header">Flowers в социальных сетях, почитайте</br>отзывы наших реальных
-                клиентов</br>
-            </h1>
-            <p class="comments__text">Более 1111 подписчиков в соц сетях в ВК и Инстаграм</p>
-            <div class="comments__container">
-                <img class="comments__img" src="/" alt="image">
-                <img class="comments__img" src="/" alt="image">
-            </div>
-        </div>
-
-        <div class="questions">
-            <h1 class="questions__header">Часто задаваемые вопросы</h1>
-
-            <div class="accordion questions__accordion" id="questionsAccordion">
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Вопрос 1
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#questionsAccordion">
-                        <div class="accordion-body">
-                            <strong>Ответ</strong>
-                        </div>
+                <div class="row job-advantages__row">
+                    <div class="col job-advantages__item">
+                        <i class="bi bi-mortarboard-fill" style="color: #97c7fc;"></i>
+                        <!-- #061084 -->
+                        <p class="job-advantages__text">Доступ к онлайн школе франчайзера, с более</br>чем
+                            20 урокам</p>
+                    </div>
+                    <div class="col job-advantages__item">
+                        <i class="bi bi-box-seam-fill" style="color: #fac47a;"></i>
+                        <!-- #ffd194 -->
+                        <p class="job-advantages__text">Аренда склада в вашем регионе под</br>товарный запас
+                        </p>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Вопрос 2
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
-                        <div class="accordion-body">
-                            <strong>Ответ</strong>
-                        </div>
+                <div class="row job-advantages__row">
+                    <div class="col job-advantages__item">
+                        <i class="bi bi-megaphone-fill" style="color:#e5a4e1 ;"></i>
+                        <p class="job-advantages__text">Маркетинг при запуске, реклама на сайте</br>и в
+                            социальных сетях
+                        </p>
+                    </div>
+                    <div class="col job-advantages__item">
+                        <i class="bi bi-star-fill" style="color: #ffe885;"></i>
+                        <!-- #f7cd1a -->
+                        <p class="job-advantages__text">Эксклюзивные права на франшизу в
+                            вашем</br>городе\регионе</p>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Вопрос 3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
-                        <div class="accordion-body">
-                            <strong>Ответ</strong>
-                        </div>
+                <div class="row job-advantages__row">
+                    <div class="col job-advantages__item">
+                        <i class="bi bi-cash" style="color: #90b291;"></i>
+                        <p class="job-advantages__text">Минимальная закупочная стоимость товара</p>
+                    </div>
+                    <div class="col job-advantages__item">
+                        <i class="bi bi-gift-fill" style="color: #fb8eb8;"></i>
+                        <!-- #f8448b -->
+                        <p class="job-advantages__text">Мотивационная бонусная система</p>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Вопрос 4
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
-                        <div class="accordion-body">
-                            <strong>Ответ</strong>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Вопрос 5
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
-                        <div class="accordion-body">
-                            <strong>Ответ</strong>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Вопрос 6
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
-                        <div class="accordion-body">
-                            <strong>Ответ</strong>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-        <div class="question-apply">
-            <h1 class="question-apply__header">Остались вопросы?</h1>
-            <p class="question-apply__text">Задайте их прямо сейчас и получите консультацию в течение 15
-                мин</p>
-            <input class="question-apply__input" name="question" type="text" placeholder="Введите вопрос" required>
-            <input class="question-apply__phone-input" name="phone" type="tel" inputmode="tel" autocomplete="tel"
-                placeholder="Введите ваш телефон" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
-            <button class="qestion-apply__button" type="button">Получить консультацию</button>
-        </div>
-        <img class="map__img" src="/" alt="image">
+            <div id="phone-apply" class="phone-apply">
+                <h1 class="phone-apply__header">Оставьте заявку</h1>
+                <p class="phone-apply__text">и получите консультацию специалиста в течение 15 минут</p>
+                <form class="row phone__apply-form">
+                    <div class="col-3 form-floating mt-3">
+                        <input type="tel" id="phone" class="form-control phone__input" placeholder="enter your phone"
+                            required>
+                        <label for="phone" class="phone__input-label ps-4">Телефон</label>
+                    </div>
+                    <button type="submit" class="col-3 btn phone-apply__button mt-3">Получить консультацию</button>
+                </form>
+            </div>
+
+            <div class="certificate">
+                <h1 class="certificate__header">Занимаемся цветочным бизнесом более 15 лет и</br>гордимся
+                    своей
+                    репутацией
+                </h1>
+                <div class="row certificate_container">
+                    <div class="col certificate__item">
+                        <p class="certificate__text">Сертификат</p>
+                        <img class="certificate__img" src="assets/certificate.jpg" alt="certificate"
+                            style="width: 18rem;">
+                    </div>
+                    <div class="col certificate__item">
+                        <p class="certificate__text">Сертификат</p>
+                        <img class="certificate__img" src="assets/certificate.jpg" alt="certificate"
+                            style="width: 18rem;">
+                    </div>
+                    <div class="col certificate__item">
+                        <p class="certificate__text">Сертификат</p>
+                        <img class="certificate__img" src="assets/certificate.jpg" alt="certificate"
+                            style="width: 18rem;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments">
+                <h1 class="comments__header">Flowers в социальных сетях, почитайте</br>отзывы наших реальных
+                    клиентов</br>
+                </h1>
+                <p class="comments__text">Более 1111 подписчиков в соц сетях в ВК и Инстаграм</p>
+                <div class="comments__container">
+                    <img class="comments__img" src="/" alt="image">
+                    <img class="comments__img" src="/" alt="image">
+                </div>
+            </div>
+
+            <div class="questions">
+                <h1 class="questions__header">Часто задаваемые вопросы</h1>
+
+                <div class="accordion questions__accordion" id="questionsAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Вопрос 1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <strong>Ответ</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Вопрос 2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <strong>Ответ</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Вопрос 3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <strong>Ответ</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Вопрос 4
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <strong>Ответ</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Вопрос 5
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <strong>Ответ</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Вопрос 6
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <strong>Ответ</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="question-apply">
+                <h1 class="question-apply__header">Остались вопросы?</h1>
+                <p class="question-apply__text">Задайте их прямо сейчас и получите консультацию в течение 15
+                    мин</p>
+                <form class="row question-apply__form">
+                    <div class="col form-floating mt-3">
+                        <input type="text" id="question" class="form-control question__input" placeholder="enter your question"
+                            required>
+                        <label for="question" class="ps-4">Вопрос</label>
+                    </div>
+                    <div class="col form-floating mt-3">
+                        <input type="tel" id="phone" class="form-control phone__input" placeholder="enter your phone"
+                            required>
+                        <label for="phone" class="ps-4">Телефон</label>
+                    </div>
+                    <button type="submit" class="col-3 btn question-apply__button mt-3">Получить консультацию</button>
+                </form>
+            </div>
+
+            <img class="map__img" src="/" alt="image">
     </main>
     <footer class="footer">
         <div class="footer__main">

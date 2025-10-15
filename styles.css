@@ -28,6 +28,7 @@ body{
     color: var(--color-fg);
     font-family: var(--font-heading);
     line-height: 1.5;
+    font-size: 20px;
 }
 
 .container{
@@ -36,19 +37,36 @@ body{
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--color-fg);
     color: var(--color-bg);
     position: sticky;
     top:0;
     z-index: 100;
-    padding:var(--space-2);
     
     font-family: var(--font-accent);
 }
 
+.header__text{
+    color: var(--color-bg);
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.header__main-desc{
+    font-size: 15px;
+    line-height: 1;
+}
+
+.header__desc,
+.header__phone-text{
+    font-size: 20px;
+}
+
+.header__phone-link{
+    color: var(--color-bg);
+    font-size: 15px;
+}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -60,26 +78,23 @@ body{
     font-family: var(--font-accent);
 }
 
-.header__main,
 .footer__main{
     display: flex;
     align-items: center;
     gap: var(--space-2);
 }
-.header__container,
+
 .footer__container{
     display: flex;
     flex-direction: column;
     gap: 0;
 }
 .header__main-desc{
-    margin: 0;
     font-size: 15px;
     line-height: 1;
 }
 .header__desc,
 .header__phone{
-    margin: 0;
     font-size: 20px;
 }
 
@@ -89,7 +104,7 @@ body{
     margin: 0;
 }
 
-.header__text{
+/* .header__text{
     color: var(--color-bg);
     text-decoration: none;
     font-size: 25px;
@@ -98,7 +113,7 @@ body{
 .header__phone-link{
     color: var(--color-bg);
     font-size: 15px;
-}
+} */
 
 .footer__phone-link{
     color: var(--color-bg);
@@ -125,23 +140,6 @@ body{
     color: var(--color-fg);
     font-family: var(--font-heading);
     padding: 15px 0;
-}
-
-.inf__header,
-.advantages__header,
-.options__header,
-.apply__header,
-.pros__header,
-.manager__header,
-.contract__header,
-.job-advantages__header
-.phone-apply__header,
-.certificate__header,
-.comments__header,
-.questions__header,
-.question-apply__header{
-    margin: 0;
-    font-size: 40px;
 }
 
 .inf__list-item,
@@ -173,6 +171,7 @@ body{
 .question-apply__button:hover,
 .card__button:hover{
     background-color: var(--color-darkaccent);
+    color: var(--color-fg);
     transform: translateY(-1px);
 }
 
@@ -181,22 +180,34 @@ body{
 .phone-apply__button:focus-visible,
 .question-apply__button:focus-visible,
 .card__button:focus-visible{
+    color: var(--color-fg);
     background-color: var(--color-accent);
     outline: 2px solid var(--color-fg);
     outline-offset: 1px;
 }
 
+.accordion-button{
+    color: var(--color-fg);
+}
+
 .accordion-button:not(.collapsed),
 .accordion-button:active{
+    color: var(--color-fg);
     background-color: var(--color-accent);      
     box-shadow: none;
 }
 
+
 .accordion-button:hover,
 .accordion-button:focus-visible{
+    color: var(--color-fg);
     outline: 4px solid var(--color-accent);
     transform: translateY(-1px);
     box-shadow: none;
+}
+
+.accordion-body{
+    color: var(--color-fg);
 }
 
 .options__first-list,

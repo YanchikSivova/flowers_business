@@ -90,7 +90,8 @@ body{
 .certificate,
 .comments,
 .questions,
-.question-apply{
+.question-apply,
+.map{
     background-color: var(--color-bg);
     color: var(--color-fg);
     font-family: var(--font-heading);
@@ -222,4 +223,12 @@ body{
 .advantages__table th:last-child,
 .advantages__table td:last-child{
     border-right: none;
+}
+
+.comments__img{
+    border: 2px solid var(--color-fg);
+}
+
+.comments__desc{
+    color: var(--color-fg);
 }

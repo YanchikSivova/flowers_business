@@ -46,88 +46,43 @@ body{
     font-family: var(--font-accent);
 }
 
-.header__text{
+.header__text,
+.footer__header{
     color: var(--color-bg);
     text-decoration: none;
     font-size: 25px;
     line-height: 1.5;
 }
 
-.header__main-desc{
+.header__main-desc,
+.footer__header-text{
     font-size: 15px;
     line-height: 1;
 }
 
 .header__desc,
-.header__phone-text{
+.header__phone-text,
+.footer__text,
+.footer__phone{
     font-size: 20px;
 }
 
-.header__phone-link{
+.header__phone-link,
+.footer__phone-link{
     color: var(--color-bg);
     font-size: 15px;
 }
 .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--color-fg);
     color: var(--color-bg);
-    padding: var(--space-2) var(--space-2);
-    
     font-family: var(--font-accent);
-}
-
-.footer__main{
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-}
-
-.footer__container{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-.header__main-desc{
-    font-size: 15px;
-    line-height: 1;
-}
-.header__desc,
-.header__phone{
-    font-size: 20px;
-}
-
-.footer__header,
-.footer__header-text,
-.footer__phone{
-    margin: 0;
-}
-
-/* .header__text{
-    color: var(--color-bg);
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.header__phone-link{
-    color: var(--color-bg);
-    font-size: 15px;
-} */
-
-.footer__phone-link{
-    color: var(--color-bg);
-}
-
-
-.main{
-    padding: 0  75px;
 }
 
 .inf,
 .advantages,
 .options,
 .apply,
+.pros,
 .manager,
 .contract,
 .job-advantages,
@@ -139,7 +94,6 @@ body{
     background-color: var(--color-bg);
     color: var(--color-fg);
     font-family: var(--font-heading);
-    padding: 15px 0;
 }
 
 .inf__list-item,
@@ -154,9 +108,7 @@ body{
 .question-apply__button{
     border-radius: var(--radius);
     background-color: var(--color-accent);
-    border: none;
     color: var(--color-fg);
-    padding: var(--space-1) var(--space-2);
     font-size: 20px;
     transition: all 0.3s ease;
 }
@@ -218,20 +170,7 @@ body{
 .options__third-desc{
     font-size: 20px;
 }
- .options__first,
- .options__second{
-    padding: 10px 0;
- }
-
- .options__third{
-  padding-top: 10px;  
- }
-
-.phone-apply{
-    padding-top:100px;
-    margin-top: -100px;
-}
-
+ 
 .name__input,
 .phone__input,
 .question__input{
@@ -283,24 +222,4 @@ body{
 .advantages__table th:last-child,
 .advantages__table td:last-child{
     border-right: none;
-}
-.pros__row,
-.job-advantages__row{
-    margin-bottom: 5px;
-}
-.pros__item,
-.job-advantages__item{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.pros__item i,
-.job-advantages__item i{
-    font-size: 40px;
-}
-
-.pros__item p,
-.job-advantages__item p{
-    margin: 0;
 }

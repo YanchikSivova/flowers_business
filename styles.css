@@ -255,3 +255,23 @@ body{
     transform: translateY(-3px);
     outline: none;
 }
+
+@media (max-width:576px){
+    .apply__form,
+    .phone__apply-form,
+    .question-apply__form{
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .apply__form .form-floating,
+    .phone__apply-form .form-floating,
+    .question-apply__form .form-floating,
+    .apply__form .btn,
+    .phone__apply-form .btn,
+    .question-apply__form .btn{
+        width:100%;
+        flex: 1 0 auto;
+    }
+}
